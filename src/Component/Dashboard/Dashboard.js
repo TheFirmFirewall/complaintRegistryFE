@@ -9,23 +9,36 @@ const Dashboard = ({
   floorComplaints,
   roomComplaints,
   departmentComplaints,
-  togglePage,
+  toggleIsDashboard,
 }) => {
   return (
     <div className="dashboard-container">
       {/* Navbar */}
-      <Navbar togglePage={togglePage} />
+      <Navbar />
       {/* Profile */}
       <Profile studentData={studentData} />
       {/* Complaints */}
 
-      <Complaints complaintType={"Floor Complaints"} complaints={floorComplaints} />
+      <Complaints
+        complaintType={"Floor Complaints"}
+        complaints={floorComplaints}
+      />
 
-      <Complaints complaintType={"Room Complaints"} complaints={roomComplaints} />
-      
-      <Complaints complaintType={"Department Complaints"} complaints={departmentComplaints} />
-      
-      <button type="button" onClick={togglePage} class="create-complaint-button">
+      <Complaints
+        complaintType={"Room Complaints"}
+        complaints={roomComplaints}
+      />
+
+      <Complaints
+        complaintType={"Department Complaints"}
+        complaints={departmentComplaints}
+      />
+
+      <button
+        type="button"
+        onClick={toggleIsDashboard}
+        class="create-complaint-button"
+      >
         Create New Complaint
       </button>
     </div>

@@ -1,0 +1,35 @@
+.main-login-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.login input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.login button {
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.login p button {
+  all: unset;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #55f;
+}

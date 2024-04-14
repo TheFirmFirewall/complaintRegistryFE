@@ -1,0 +1,16 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-complaint-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #afafaf;
+  min-height: 5.5vh;
+  min-width: 11vw;
+  border: none;
+  border-radius: 15px;
+}

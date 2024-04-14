@@ -1,0 +1,22 @@
+.complaint-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  min-width: 15vw;
+  border-radius: 15px;
+  margin: 15px 20px;
+  background-color: #afafaf;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.complaint-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  /* border: 3px solid black; */
+}

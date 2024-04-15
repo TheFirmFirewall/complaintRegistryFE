@@ -11,7 +11,7 @@
   border-radius: 15px;
   margin: 10px 0;
   padding: 10px 20px;
-  width: 75vw;
+  width: 65vw;
 }
 
 .form-group {
@@ -33,7 +33,6 @@
   background-color: #afafaf;
   height: 5vh;
   border-radius: 10px;
-
 }
 
 .radio-buttons label {

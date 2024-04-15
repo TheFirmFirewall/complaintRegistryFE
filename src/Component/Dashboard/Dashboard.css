@@ -4,7 +4,15 @@
   align-items: center;
 }
 
-.create-complaint-button {
+.navigate-buttons-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: space-evenly;
+  width: 65vw;
+}
+
+.navigate-button {
   display: flex;
   justify-content: space-around;
   align-items: center;

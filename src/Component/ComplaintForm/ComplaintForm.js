@@ -34,11 +34,11 @@ const ComplaintForm = ({ toggleDashboard }) => {
     <div className="main-complaint-form">
       <Navbar />
       <div className="form-container">
-        <h2>Submit New Complaint</h2>
+        <h1><b>Submit New Complaint</b></h1>
         <form onSubmit={handleSubmit}>
           <div className="main-form">
             <div className="form-group">
-              <label>Choose Category</label>
+              <label className="head-label">Choose Category</label>
               <div className="radio-buttons">
                 <input
                   type="radio"
@@ -70,7 +70,7 @@ const ComplaintForm = ({ toggleDashboard }) => {
               </div>
             </div>
             <div className="form-group">
-              <label>Choose Location</label>
+              <label className="head-label">Choose Location</label>
               <div className="radio-buttons">
                 <input
                   type="radio"
@@ -104,7 +104,7 @@ const ComplaintForm = ({ toggleDashboard }) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="title">Enter Title :</label>
+            <label className="head-label" htmlFor="title">Enter Title :</label>
             <input
               type="text"
               id="title"
@@ -114,7 +114,7 @@ const ComplaintForm = ({ toggleDashboard }) => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="description">Enter Description :</label>
+            <label className="head-label" htmlFor="description">Enter Description :</label>
             <textarea
               id="description"
               name="description"
@@ -122,18 +122,21 @@ const ComplaintForm = ({ toggleDashboard }) => {
               onChange={handleChange}
             ></textarea>
           </div>
-          <button type="submit" className="create-complaint-button">
-            Create New Complaint
-          </button>
-          <button
-            type="button"
-            onClick={toggleDashboard}
-            class="create-complaint-button"
-          >
-            Goto Dashboard
-          </button>
         </form>
+        
       </div>
+      <div className="navigate-buttons-container">
+            <button type="submit" className="navigate-button">
+              Create New Complaint
+            </button>
+            <button
+              type="button"
+              onClick={toggleDashboard}
+              class="navigate-button"
+            >
+              Goto Dashboard
+            </button>
+          </div>
     </div>
   );
 };

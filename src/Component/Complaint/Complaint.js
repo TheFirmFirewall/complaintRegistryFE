@@ -2,6 +2,7 @@ import React from "react";
 import './Complaint.css';
 
 const Complaint = ({ complaint }) => {
+  console.log(complaint);
   return (
     <div className="complaint-container">
       <div className="complaint-card">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import "./ComplaintForm.css";
 
-const ComplaintForm = ({ togglePage }) => {
+const ComplaintForm = ({ toggleDashboard }) => {
   const [formData, setFormData] = useState({
     category: "",
     location: "",
@@ -124,6 +124,13 @@ const ComplaintForm = ({ togglePage }) => {
           </div>
           <button type="submit" className="create-complaint-button">
             Create New Complaint
+          </button>
+          <button
+            type="button"
+            onClick={toggleDashboard}
+            class="create-complaint-button"
+          >
+            Goto Dashboard
           </button>
         </form>
       </div>
